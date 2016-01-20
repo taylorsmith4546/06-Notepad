@@ -1,0 +1,35 @@
+﻿<Window x:Class="Notepad.MainWindow" 
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+         xmlns:local="clr-namespace:Notepad" 
+         mc:Ignorable="d" 
+         Title="Taylor's Notepad" Height="500" Width="375">
+    
+    <Grid>
+        
+        <Menu x:Name="menu" Height="22" VerticalAlignment="Top">
+            
+            <MenuItem Header="File">
+                
+                <MenuItem Name="SelectNew" Header="New" Click="SelectNew_Click"></MenuItem>
+                
+                <MenuItem Name="SelectOpen" Header="Open"  Click="SelectOpen_Click"></MenuItem>
+                
+                <MenuItem Name="SelectSave" Header="Save"  Click="SelectSave_Click" ></MenuItem>
+                
+                <MenuItem Name="SelectClose" Header="Close"  Click="SelectClose_Click"></MenuItem>
+                
+            </MenuItem>
+            
+        </Menu>
+        
+        <TextBox x:Name="textBox" HorizontalAlignment="Stretch"  Margin="0,22,0,0" TextWrapping="Wrap" VerticalAlignment="Stretch" />
+        
+    </Grid>
+    
+</Window>
+
+
+
